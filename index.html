@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Уютная кухня — домашняя кухня в центре города</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="header">
+      <div class="header__inner container">
+        <a class="logo" href="#" aria-label="Уютная кухня — на главную">
+          <span class="logo__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="currentColor"
+                d="M10 16c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v2H10v-2zm2 4h16v6a5 5 0 0 1-5 5H17a5 5 0 0 1-5-5v-6zm4 2v4a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-4H16zm-1-12h10v2H15v-2zm2-4h6v2h-6v-2z"
+              />
+              <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M13 10s1-3 3.5-3 3.5 3 3.5 3M20 10s1-3 3.5-3 3.5 3 3.5 3" fill="none" />
+            </svg>
+          </span>
+          <span class="logo__text">Уютная <span class="logo__accent">кухня</span></span>
+        </a>
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="#menu">Меню</a>
+          <a class="nav__link" href="#booking">К бронированию</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="menu" class="anchor-target" tabindex="-1" aria-label="Меню (скоро на сайте)">
+        <span class="visually-hidden">Раздел «Меню» скоро появится на сайте.</span>
+      </div>
+
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <picture>
+            <source media="(min-width: 768px)" srcset="heroImg.png" type="image/png" />
+            <img
+              class="hero__img"
+              src="heroImgM.png"
+              width="1200"
+              height="640"
+              alt="Интерьер кафе: деревянные столы и уютный свет"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Домашняя кухня в центре города</h1>
+          <p class="hero__lead">
+            Бронируйте стол онлайн — мы подготовим всё к вашему приходу.
+          </p>
+          <a class="btn btn--primary" href="#booking">Забронировать стол</a>
+        </div>
+      </section>
+
+      <section class="atmosphere container" aria-label="Ссылка на бронирование">
+        <p class="atmosphere__text">
+          Нравится атмосфера?
+          <a class="atmosphere__link" href="#booking">перейти к форме бронирования</a>
+        </p>
+      </section>
+
+      <section class="gallery container" aria-labelledby="gallery-title">
+        <h2 class="visually-hidden" id="gallery-title">Галерея</h2>
+        <div class="slider" data-slider>
+          <button
+            type="button"
+            class="slider__arrow slider__arrow--prev"
+            data-slider-prev
+            aria-label="Предыдущий слайд"
+          >
+            ‹
+          </button>
+          <div class="slider__viewport">
+            <ul class="slider__track" data-slider-track>
+              <li class="slider__slide">
+                <img src="c1.png" alt="Овощная запеканка" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c2.png" alt="Кофе навынос" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c3.png" alt="Десерты и орехи" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c4.png" alt="Фасад кафе" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c5.png" alt="Салат с гранатом" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c6.png" alt="Блюдо на гриле" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c7.png" alt="Свежая выпечка" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c8.png" alt="Напитки в бокалах" width="400" height="400" loading="lazy" />
+              </li>
+              <li class="slider__slide">
+                <img src="c9.png" alt="Паста с соусом" width="400" height="400" loading="lazy" />
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="slider__arrow slider__arrow--next"
+            data-slider-next
+            aria-label="Следующий слайд"
+          >
+            ›
+          </button>
+          <div class="slider__dots" data-slider-dots role="tablist" aria-label="Слайды галереи"></div>
+        </div>
+      </section>
+
+      <section class="faq container" aria-labelledby="faq-title">
+        <h2 class="faq__title" id="faq-title">Частые вопросы</h2>
+        <div class="accordion" data-accordion>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button
+                type="button"
+                class="accordion__trigger"
+                id="acc-btn-1"
+                aria-expanded="false"
+                aria-controls="acc-panel-1"
+                data-accordion-trigger
+              >
+                Часы работы
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              class="accordion__panel"
+              id="acc-panel-1"
+              role="region"
+              aria-labelledby="acc-btn-1"
+              hidden
+              data-accordion-panel
+            >
+              <p>Пн-Чт 10:00–22:00 • Пт-Сб 10:00–23:00 • Вс 11:00–21:00</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button
+                type="button"
+                class="accordion__trigger"
+                id="acc-btn-2"
+                aria-expanded="false"
+                aria-controls="acc-panel-2"
+                data-accordion-trigger
+              >
+                Как добраться
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              class="accordion__panel"
+              id="acc-panel-2"
+              role="region"
+              aria-labelledby="acc-btn-2"
+              hidden
+              data-accordion-panel
+            >
+              <p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button
+                type="button"
+                class="accordion__trigger"
+                id="acc-btn-3"
+                aria-expanded="false"
+                aria-controls="acc-panel-3"
+                data-accordion-trigger
+              >
+                Детям и особые пожелания
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              class="accordion__panel"
+              id="acc-panel-3"
+              role="region"
+              aria-labelledby="acc-btn-3"
+              hidden
+              data-accordion-panel
+            >
+              <p>Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking" aria-labelledby="booking-title">
+        <div class="container booking-section__inner">
+          <h2 class="booking-section__title" id="booking-title">Бронирование стола</h2>
+          <p class="booking-section__hint">Заполните поля — перезвоним для подтверждения.</p>
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="first-name">Имя</label>
+              <input class="field__input" type="text" id="first-name" name="firstName" autocomplete="given-name" required />
+              <span class="field__error" data-error-for="first-name" role="alert"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="last-name">Фамилия</label>
+              <input class="field__input" type="text" id="last-name" name="lastName" autocomplete="family-name" required />
+              <span class="field__error" data-error-for="last-name" role="alert"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="email">Email</label>
+              <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+              <span class="field__error" data-error-for="email" role="alert"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="phone">Телефон</label>
+              <input
+                class="field__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+              />
+              <span class="field__error" data-error-for="phone" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <div
+      class="success-modal"
+      id="success-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="success-title"
+    >
+      <div class="success-modal__backdrop" data-success-dismiss tabindex="-1" aria-hidden="true"></div>
+      <div class="success-modal__card">
+        <h2 class="success-modal__title" id="success-title">Заявка отправлена</h2>
+        <p class="success-modal__text">
+          Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.
+        </p>
+        <button type="button" class="btn btn--close" id="success-close">Закрыть</button>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
